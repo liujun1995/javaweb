@@ -35,7 +35,7 @@ public class ThreadLocalTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("关联的数据是：" + o);
+            System.out.println("当前线程"+Thread.currentThread().getName()+"关联的数据是：" + o);
         }
     }
 
