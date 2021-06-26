@@ -25,11 +25,6 @@ public class ThreadLocalTest {
             System.out.println("线程[" + Thread.currentThread().getName() + "]生成的随机数是：" + i);
             data.put(Thread.currentThread().getName(), i);
             Object o = data.get(Thread.currentThread().getName());
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             System.out.println("当前线程"+Thread.currentThread().getName()+"关联的数据是：" + o);
         }
     }
