@@ -30,6 +30,11 @@ public class ThreadLocalTest {
                 e.printStackTrace();
             }
             Object o = data.get(Thread.currentThread().getName());
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println("关联的数据是：" + o);
         }
     }
