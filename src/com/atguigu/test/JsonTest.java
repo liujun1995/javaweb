@@ -78,10 +78,9 @@ public class JsonTest {
         for (Map.Entry<String,Kid> entry : jsonStringToJavabeanMap.entrySet()){
             System.out.println(entry.getKey() +":"+ entry.getValue());
         }
-
-
-
     }
+
+
 
 
 }
